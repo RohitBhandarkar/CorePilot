@@ -1,0 +1,86 @@
+# SchedulAI: ML-Driven CPU Scheduler Project Diary
+
+---
+
+## Project Summary
+**Goal:** Build an ML module that learns optimal CPU scheduling patterns tailored to my unique machine usage style (e.g., gaming, development, streaming).
+
+---
+
+## Key Steps & Checkpoints
+
+1. **Data Collection:**  
+   - Write a script (Python or Bash) to log process lifetimes, CPU usage, wait times, and I/O stats from my system.
+   - Log data at regular intervals and save it in a structured format (CSV, JSON, or SQLite).
+   - **Checkpoint:** Paste the data logging script and sample output here for review.
+
+2. **Data Cleaning:**  
+   - Normalize the collected data for time of day, background noise, and system state.
+
+3. **Modeling:**  
+   - Use reinforcement learning or multi-armed bandit algorithms to optimize scheduling decisions.
+
+4. **Deployment:**  
+   - Prototype the scheduler in userland, with the goal of integrating it as a Linux kernel scheduler module.
+
+5. **MLOps:**  
+   - Monitor logs and retrain the model weekly to adapt to changing usage patterns.
+
+6. **Evaluation:**  
+   - Compare the performance of the ML-driven scheduler against existing Linux schedulers (such as CFS and BFS) using key metrics.
+   - Visualize the results with charts and tables.
+   - **Checkpoint:** Evaluation against current models is required before project completion.
+
+---
+
+## Progress Diary
+
+**2025-07-19**  
+- Project initialized and structure defined.
+- README.md scaffolded with overview, structure, and instructions.
+- Project plan and diary set up for persistent tracking.
+- Evaluation against current Linux schedulers (CFS, BFS, etc.) set as a required checkpoint.
+- User has chosen to write the data collection script.
+- Awaiting user’s data logging script and sample output for review.
+
+---
+
+## Instructions to Resume
+
+1. **Continue from this file:**  
+   - When ready, paste your data logging script and sample output below.
+   - Ask for a review or help with the next step.
+
+2. **Next Steps:**  
+   - After data collection, review the script and logs.
+   - Proceed to data cleaning and normalization.
+
+3. **If you switch devices or windows:**  
+   - Copy this file and your progress to the new environment.
+   - Paste relevant updates or questions here to continue.
+
+---
+
+## Evaluation Plan
+
+- **Compare:** Collect and analyze performance metrics (CPU utilization, process wait time, throughput, etc.) for both the ML scheduler and standard Linux schedulers.
+- **Visualize:** Present comparative statistics and visualizations (charts, tables) to clearly show improvements or trade-offs.
+- **Document:** Summarize findings in the project README and documentation.
+
+---
+
+## Conversation Summary
+
+- The project is named **SchedulAI (CorePilot)**.
+- The user wants to level up ML skills with a hands-on project: an ML-driven CPU scheduler that adapts to their usage style.
+- The user will handle the initial data collection script.
+- All progress, decisions, and checkpoints are logged here for continuity.
+- Evaluation against current models is a required checkpoint.
+- This diary ensures seamless handoff and continuity for any future AI agent or session.
+- **Important:** I am a teacher guiding the user through this project. I will only provide help or guidance when the user specifically asks for it. This approach is to maximize the user's learning by encouraging independent problem-solving.
+
+---
+
+**ACTION REQUIRED:**  
+Paste your data logging script and a few lines of sample output below.  
+If you need a review or help with the next step, just ask!
