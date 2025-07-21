@@ -14,3 +14,4 @@ vendor/
 coverage.out
 *.db
 *.sqlite
+/artifacts/process_data.json
