@@ -17,13 +17,21 @@ func main() {
 
 	for pid := range processIDs { //proc is the process ID
 		proc, _ := process.NewProcess(int32(pid))
-		// if err != nil {
-		// 	fmt.Println("Error creating process:", err)
-		// 	continue
-		// }
+		if err != nil {
+			fmt.Println("Error creating process:", err)
+			continue
+		}
 		now := time.Now()
 		println("Process ID:", pid, "Timestamp:", now.Unix())
 		
+		name, err := proc.Name()
+    	if err != nil {
+        	fmt.Println("Error getting process name:", err)
+        	name = "unknown"
+    	} else{
+    		fmt.Printf("Process ID: %d, Name: %s, Timestamp: %d\n", pid, name, now.Unix())
+		}
+
 		createTime, err := proc.CreateTime()
 		if err != nil {
 			fmt.Println("Error getting create time:", err)
