@@ -1,0 +1,16 @@
+/data/lifetime_log
+/data/go.mod
+/data/go.sum
+*.exe
+*.out
+*.test
+vendor/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+*.log
+coverage.out
+*.db
+*.sqlite

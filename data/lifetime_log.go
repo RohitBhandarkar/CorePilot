@@ -16,11 +16,11 @@ func main() {
 	fmt.Println("Processes:", len(processIDs))
 
 	for pid := range processIDs { //proc is the process ID
-		proc, err := process.NewProcess(int32(pid))
-		if err != nil {
-			fmt.Println("Error creating process:", err)
-			continue
-		}
+		proc, _ := process.NewProcess(int32(pid))
+		// if err != nil {
+		// 	fmt.Println("Error creating process:", err)
+		// 	continue
+		// }
 		now := time.Now()
 		println("Process ID:", pid, "Timestamp:", now.Unix())
 		
